@@ -19,6 +19,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    environment: mfe
+
     steps:
       - uses: actions/checkout@v2
       - run: npm install
