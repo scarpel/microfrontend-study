@@ -8,7 +8,7 @@ on:
       - 'container/**'
 
 defaults:
-  runs:
+  run:
     working-directory: container
 
 jobs:
