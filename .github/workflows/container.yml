@@ -1,7 +1,7 @@
 name: deploy-container
 
 on:
-  pushs:
+  pushes:
     branches:
       - main
     paths:
