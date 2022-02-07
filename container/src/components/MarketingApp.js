@@ -1,15 +1,6 @@
 import { mount } from 'marketing/MarketingApp';
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+import DefaultApp from './DefaultApp';
 
-export default function MarketingApp() {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    if (containerRef.current) {
-      mount(containerRef.current);
-    }
-  }, []);
-
-  return <div className="marketing-app" ref={containerRef} />;
-}
+export default (props) => <DefaultApp mount={mount} className="marketing-app" {...props} />;
