@@ -1,6 +1,7 @@
-import { mount } from 'auth/AuthApp';
-
 import React from 'react';
+import { mount } from 'auth/AuthApp';
 import DefaultApp from './DefaultApp';
 
-export default (props) => <DefaultApp mount={mount} className="auth-app" {...props} />;
+export default (props) => {
+  return <DefaultApp mount={mount} className="auth-app" initalPath="/auth/signin" {...props} />;
+};
