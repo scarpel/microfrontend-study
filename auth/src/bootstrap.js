@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { createBrowserHistory, createMemoryHistory } from 'history';
 
 import App from './App';
-import AuthProvider from './context/AuthContext';
+// import AuthProvider from './context/AuthContext';
 
 const mount = (el, { onNavigate, defaultHistory, initialPath = '/', onSignIn = () => {} }) => {
   const history =
@@ -18,9 +18,9 @@ const mount = (el, { onNavigate, defaultHistory, initialPath = '/', onSignIn = (
   }
 
   ReactDOM.render(
-    <AuthProvider onSignIn={onSignIn}>
-      <App history={history} />
-    </AuthProvider>,
+    // <AuthProvider onSignIn={onSignIn}>
+    <App history={history} />,
+    // </AuthProvider>,
     el
   );
 

@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignIn() {
-  const { onSignIn } = useContext(AuthContext);
+  // const { onSignIn } = useContext(AuthContext);
 
   const classes = useStyles();
 
@@ -95,7 +95,7 @@ export default function SignIn() {
             variant="contained"
             color="primary"
             className={classes.submit}
-            onClick={onSignIn}
+            onClick={() => console.log('teste')}
           >
             Sign In
           </Button>
