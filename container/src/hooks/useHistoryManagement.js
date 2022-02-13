@@ -4,8 +4,6 @@ export default function useHistoryManagement() {
   const history = useHistory();
 
   const onNavigate = (nextPathname) => {
-    console.log('onNavigate', nextPathname);
-
     if (history.location.pathname !== nextPathname) {
       history.push(nextPathname);
     }
